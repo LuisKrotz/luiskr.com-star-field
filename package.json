@@ -23,7 +23,7 @@
     "version:major": "yarn version --major --no-git-tag-version"
   },
   "dependencies": {
-    "@luiskr/core": "1.0.0",
+    "@luiskr/core": "*",
     "three": "0.184.0"
   },
   "devDependencies": {
