@@ -16,16 +16,13 @@ import * as TSL from 'three/tsl'
 /** Dependency bundle the node-material paths expect — TSL fns + material class. */
 const NODE_DEPS = { TSL, mats: { MeshBasicNodeMaterial } }
 
-import {
-  surfaceFor,
-  coronaFor,
-  haloFor,
-  pointGlowFor,
-  starSurfaceFor,
-  gasFor,
-} from '../../../../engine/bodies/procedural.js'
+import { coronaFor } from '../../../../engine/bodies/procedural/corona.js'
+import { gasFor } from '../../../../engine/bodies/procedural/gas.js'
+import { haloFor, pointGlowFor } from '../../../../engine/bodies/procedural/halo.js'
+import { starSurfaceFor } from '../../../../engine/bodies/procedural/star-surface.js'
+import { surfaceFor } from '../../../../engine/bodies/procedural/surface.js'
 import { makeNebulaSprite } from '../../../../engine/bodies/deep-sky.js'
-import { makeSpiralGalaxy } from '../../../../engine/spiral.js'
+import { makeSpiralGalaxy } from '../../../../engine/spiral/galaxy.js'
 import { buildStarBodies } from '../../../../engine/bodies-scene.js'
 import { createStarState } from '../../../../engine/state.js'
 import { tickStar } from '../../../../engine/frame.js'

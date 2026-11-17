@@ -30,7 +30,7 @@ import {
 import { makeBelt } from '../../../../engine/bodies/belt.js'
 import { makeBlackHole } from '../../../../engine/bodies/black-hole.js'
 import { makeStructure } from '../../../../engine/bodies/structures.js'
-import { makeSpiralGalaxy } from '../../../../engine/spiral.js'
+import { makeSpiralGalaxy } from '../../../../engine/spiral/galaxy.js'
 import { buildStarBodies } from '../../../../engine/bodies-scene.js'
 import {
   makeAurora,

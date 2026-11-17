@@ -19,13 +19,13 @@ import {
   SF_SPIRAL,
 } from '@core/tokens/starfield/params.js'
 import { SF_GROUPS, SF_KINDS } from '@core/tokens/starfield/kinds.js'
-import { makeSpiralGalaxy } from './spiral.js'
+import { makeSpiralGalaxy } from './spiral/galaxy.js'
 import { makeGalaxyDisc, makeNebulaSprite, SF_USER_NEBULA } from './bodies/deep-sky.js'
 import { makeBlackHole } from './bodies/black-hole.js'
 import { makeStructure } from './bodies/structures.js'
 import { makeBelt } from './bodies/belt.js'
 import { makeBeltRocks } from './bodies/belt-rocks.js'
-import { coronaFor } from './bodies/procedural.js'
+import { coronaFor } from './bodies/procedural/corona.js'
 import {
   makeAurora,
   makeConstellation,

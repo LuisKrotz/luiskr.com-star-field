@@ -11,7 +11,7 @@ import { describe, test, expect, jest, beforeEach, afterEach } from '@jest/globa
 
 import { ensureStarCloud, disposeStarCloud } from '../../../../engine/star-cloud.js'
 import { anchorScreenPos, armFrame, rotateStarCamera, tickStar } from '../../../../engine/frame.js'
-import { makeSpiralGalaxy } from '../../../../engine/spiral.js'
+import { makeSpiralGalaxy } from '../../../../engine/spiral/galaxy.js'
 import { buildStarBodies } from '../../../../engine/bodies-scene.js'
 import { SF_KINDS } from '../../../../../../core/tokens/starfield/kinds.js'
 import * as THREE from 'three'
@@ -1045,7 +1045,7 @@ describe('day/night + axis-lock tails', () => {
   })
 
   test('fillSpiral covers the barred bulge and the bubble resample paths', async () => {
-    const { fillSpiral } = await import('../../../../engine/spiral.js')
+    const { fillSpiral } = await import('../../../../engine/spiral/fill.js')
 
     const count = 64
     const pos = new Float32Array(count * 3)

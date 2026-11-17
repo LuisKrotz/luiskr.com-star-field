@@ -34,7 +34,7 @@ import { SF_COLORS, SF_COMET } from '@core/tokens/starfield/params.js'
 import { matParams } from '../materials.js'
 import { lcg, seedFrom } from '../rand.js'
 import { irregularGeometry } from './primitives.js'
-import { surfaceFor } from './procedural.js'
+import { surfaceFor } from './procedural/surface.js'
 import type { SFBodyDef } from '../types.js'
 
 type ThreeModule = typeof import('three')
