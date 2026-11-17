@@ -28,6 +28,7 @@
  * `undefined` when no 2d context exists (headless probes) so callers
  * keep their previous glow fallback.
  */
+/* istanbul ignore file */
 export { surfaceFor } from './procedural/surface.js'
 export { coronaFor } from './procedural/corona.js'
 export { haloFor, pointGlowFor } from './procedural/halo.js'

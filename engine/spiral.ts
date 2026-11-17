@@ -11,5 +11,6 @@
  * The distribution is deterministic (seeded LCG) so every boot draws the
  * same galaxy — no flicker between visits, no per-frame allocation.
  */
+/* istanbul ignore file */
 export { makeSpiralGalaxy } from './spiral/galaxy.js'
 export { fillSpiral, fillElliptical, fillDust } from './spiral/fill.js'
